@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    $('.icon').on('click', function(){
+    $('.toggle-button').on('click', function(){
         $('nav ul').toggleClass('showing');
     });
     $('nav').on('mouseleave', function(){

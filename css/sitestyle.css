@@ -48,9 +48,7 @@ h2{
     text-decoration:none;
     margin-left: 110px;
     position: absolute;
-    margin-top: 250px;
-    
-    
+    margin-top: 250px;   
 }
 
 
@@ -88,10 +86,9 @@ h2{
     flex-direction:column;
     justify-content: space-between;
     height:21px;
+    width:30px;
+    
 }
-
-
-
 
 
 
@@ -119,11 +116,10 @@ h2{
 /*** Footer section ***/
 footer {
     text-align: center;
-    background-image:url("../image/foot.png") ;
-    height: 500px;
+    background-image:url("../image/footer.png") ;
+    height: 525px;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
     align-items: center;
 }
 .dam {
@@ -143,7 +139,7 @@ footer {
    color:white;
    
 }
-
+/*
 .form-control {
     width: 520px;
     height: 30px;
@@ -173,52 +169,85 @@ label {
     padding: 5px;
 }
 
-
+*/
 .btn-btn {
     color:white; 
     text-decoration:none;
     padding: 3px 28px;
     background-color:chartreuse; 
     border:none; 
+    text-align: center;
 }
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  /* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  
+
+  /* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+  }
+  /* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 /*Responsive */
 @media only screen and (max-width: 899px) {
     .toggle-button{
-        display:flex;
+        display:block;
         margin-top: 8px;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;   
-    }
-    
    .nav-menu{
     display: none;
 
    }
+   
+   .showing {
+    display:block;
+    
+   }
 
    .nav-menu li{
-    text-align: center;
-    
-    
-   }
-
-   .nav-menu ul {
-    flex-direction: column;
-    width:100%;
-   }
-
-   .nav-menu li a {
-    padding:.5rem 1rem;
-    
-
-   }
-
-   .nav-menu.active {
-    display:flex;
-   }
+    display:block;
+ }
 
    a {
     text-decoration: none;
@@ -226,15 +255,65 @@ label {
 
 
    .toggle-button{
-    position: absolute;
-    top: .75rem;
-    right:1rem;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    height:21px;
+     display:flex;
+    
 }
-  
+
+.image {
+    display: none;
+   }
+
+   .para{
+    position: static;
+    top: 200px;
+    left: 75px;
+    font-size: 14.5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #161b1d;
+    width: 400px;
+   }
+
+   .title{
+    position: static;
+    top: 60px;
+    left: 100px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    width: 395px;  
+}
+
+.btn{
+    color:white;
+    background-color: black;
+    padding: 8px 25px;
+    text-decoration:none;
+    margin-left: 110px;
+    position: static;
+    
+      
+}
+
+.pic{
+    margin-top: 12px;
+}
+
+header{
+    background-image:url("../image/banner.png") ;
+    height: 470px;
+}
+
+
+.info{
+    font-size:14px;
+}
+
+footer{
+    height:600px;
+}
+
+
+
 
 
 }
