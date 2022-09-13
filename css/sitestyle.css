@@ -1,322 +1,262 @@
 * {
-    box-sizing:border-box ;
-    font-family:'Open Sans', sans-serif;
-
-}
-
-header{
-    background-image:url("../image/banner.png") ;
-    height: 400px;
-   background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-nav {
- background-color: black;
- display:flex;
- justify-content:space-around;
- align-items: center;  
- 
-}
-
-.nav-menu li{
-   list-style: none;
-   color:black;
-   display:inline-block;
-  
-}
-.nav-menu li a {
-    color:white;
-    text-decoration: none;
-     
-}
-.nav-menu li a:hover{
-    color:blueviolet
-}
-
-
-
-h2{
-    color:white;
-}
-
-.btn{
-    color:white;
-    background-color: black;
-    padding: 8px 25px;
-    text-decoration:none;
-    margin-left: 110px;
-    position: absolute;
-    margin-top: 250px;   
-}
-
-
-.image{
-    margin-left:180px;
-}
-
-
-.title{
-    position: absolute;
-    top: 60px;
-    left: 550px;
-    font-size: 48px;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color:white;
-    width: 395px;  
 }
 
-.para{
-    position: absolute;
-    top: 200px;
-    left:550px;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    color: #161b1d;
-    width: 400px;
-    
-}
-
-.toggle-button{
-    position: absolute;
-    top: .75rem;
-    right:1rem;
-    display:none;
-    flex-direction:column;
-    justify-content: space-between;
-    height:21px;
-    width:30px;
-    
-}
-
-
-
-
-/******** main section******/
-.dim{
-    text-align: center;
-}
-.pic{
-    color: aqua;
-}
-.log {
-    color:aqua;
-    margin-top: 5px;
-}
-
-.btn1 {
-    color:white; 
-    text-decoration:none;
-    padding:5px 20px;
-    background-color:aqua; 
-   
-}
-
-/*** Footer section ***/
-footer {
-    text-align: center;
-    background-image:url("../image/footer.png") ;
-    height: 525px;
+header {
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: center;
 }
+
+.banner {
+    background-image: url("../image/banner.png");
+}
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.nav-menu li {
+    list-style: none;
+    color: black;
+    display: inline-block;
+    border-right: 1px solid #4d4d4d;
+    padding-right: 19px;
+    margin-right: 19px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-menu li:last-child {
+    border-right: none;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color: blueviolet
+}
+
+.image {
+    display: block;
+    margin-top: 32px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+}
+
+/****/
+.para {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 94px;
+}
+
+.para__title {
+    color: white;
+    font-size: 48px;
+    margin-bottom:0;
+}
+
+.para__desc {
+    margin-bottom: 37px;
+}
+
+.btn {
+    padding: 10px 50px;
+    
+    text-decoration: none;
+
+}
+
+.btn-primary {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #000000;
+   
+
+}
+
+.btn-secondary {
+    padding: 10px 33px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #4cc0e0;
+   
+
+}
+
+/****/
+/******** main section******/
+.services {
+    margin: 0 0 55px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #676f75;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.os {
+    padding: 0 32px;
+}
+
+.os__pic {
+    color: #4cc0e0;
+    border: 11px solid #4cc0e0;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+}
+
+.os__title {
+    color: #4cc0e0;
+    padding-top: 29px;
+    font-size: 22px;
+}
+
+.os__desc {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+
+
+.col-lg-4 {
+    text-align: center;
+}
+
+/*** Contact section ***/
+.contact {
+    text-align: center;
+    background-image: url("../image/footer.png");
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .dam {
     text-align: center;
-    font-size:15px;
+    font-size: 15px;
+}
+
+.contact__title {
+    color: #4cc0e0;
+    font-size: 30px;
+    padding-top: 55px;
+}
+
+.contact__desc {
+    font-size: 16px;
+    color: #fff;
+   padding: 0 260px;
+    
+}
+.form-item__input{
+    height:43px ;
+    width:523px;
+}
+.form-item__inp {
+    height:140px ;
+    width:523px;
    
 }
-
-.lab{
-    padding:30px 20px; 
-    color:aqua;
-
+.form-item__label {
+    color:#fff;
+    margin-right:1800px ;
 }
-
-.info {
-   font-size: 16px;
-   color:white;
-   
-}
-/*
-.form-control {
-    width: 520px;
-    height: 30px;
-    border:none;
-    margin-bottom: 10px;
-}
-.form-control1 {
-    width: 520px;
-    height: 30px;
-    border:none;
-    margin-bottom: 10px;
-    margin-left: 4px;
-}
-
-.form-control2 {
-    width: 520px;
-    height: 90px;
-    border:none;
-    margin-bottom: 10px;
-    margin-right: 17px;
-}
-
-
-
-label {
-    color:white;
-    padding: 5px;
-}
-
-*/
-.btn-btn {
-    color:white; 
-    text-decoration:none;
-    padding: 3px 28px;
-    background-color:chartreuse; 
+.btn-success{
+    padding: 10px 77px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 15px;
+    background-color: #499200; 
     border:none; 
-    text-align: center;
 }
-
-
-/* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
-
-  /* Style the label to display next to the inputs */
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-/* Style the submit button */
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-
-  
-
-  /* Floating column for labels: 25% width */
-.col-25 {
-    float: left;
-    width: 20%;
-    margin-top: 6px;
-  }
-  /* Floating column for inputs: 75% width */
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
 /*Responsive */
 @media only screen and (max-width: 899px) {
-    .toggle-button{
-        display:block;
+    .toggle-button {
+        display: block;
         margin-top: 8px;
     }
 
-   .nav-menu{
-    display: none;
+    .nav-menu {
+        display: none;
+    }
 
+    .showing {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .image {
+        display: none;
+    }
+
+   .banner{
+    height:430px
+   } 
+   .os__pic{
+    margin-top: 30px;
    }
+
+   .contact__desc {
+   padding: 0 ;
+    
+}
+
+.form-item__input{
+    height:43px ;
+    width:400px;
+}
+.form-item__inp {
+    height:140px ;
+    width:400px;
    
-   .showing {
-    display:block;
-    
-   }
-
-   .nav-menu li{
-    display:block;
- }
-
-   a {
-    text-decoration: none;
-   }
-
-
-   .toggle-button{
-     display:flex;
-    
-}
-
-.image {
-    display: none;
-   }
-
-   .para{
-    position: static;
-    top: 200px;
-    left: 75px;
-    font-size: 14.5px;
-    font-family: 'Open Sans', sans-serif;
-    color: #161b1d;
-    width: 400px;
-   }
-
-   .title{
-    position: static;
-    top: 60px;
-    left: 100px;
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    color:white;
-    width: 395px;  
-}
-
-.btn{
-    color:white;
-    background-color: black;
-    padding: 8px 25px;
-    text-decoration:none;
-    margin-left: 110px;
-    position: static;
-    
-      
-}
-
-.pic{
-    margin-top: 12px;
-}
-
-header{
-    background-image:url("../image/banner.png") ;
-    height: 470px;
 }
 
 
-.info{
-    font-size:14px;
-}
-
-footer{
-    height:600px;
+   
 }
 
 
-
-
-
-}
-
-
-
+   

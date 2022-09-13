@@ -2,154 +2,208 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/sitestyle.css">
-    
-    <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/sitestyle.css">
+  <title>Home Page</title>
 </head>
 
 <body>
-    <header>
-      
-        <!-- Navigation bar section-->
-        <nav>
-           
-            <img src="image/logo.png">
-            <ul class="nav-menu">
-                <li><a href="#" style="color:rgb(0, 225, 255) ;"> Esokia </a></li>
-                <li> |</li>
-                <li><a href="#"> Services </a> </li>
-                <li> |</li>
-                <li><a href="#">Reference </a> </li>
-            </ul> 
-            <a href="#" class="toggle-button">
-              <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        
-        <div>
-        <img src="image/phone.png" class="image" height="346px">
-        <h1 class="title"> L'agence digital offshore</h1>
-        <p class="para">Nous developons pour vous le concept  de "boutique digitale" en vus proposant une offre sur measure </p>
-         <a href="#" class="btn">more info</a>
+  <header>
+    <div class="container">
+      <!-- Navigation bar section-->
+      <nav>
+        <img src="image/logo.png">
+        <ul class="nav-menu">
+          <li><a href="#" style="color: #4cc0e0"> Esokia </a></li>
+          <li><a href="#"> Services </a> </li>
+          <li><a href="#">Reference </a> </li>
+        </ul>
+        <a href="#" class="toggle-button">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <img src="image/phone.png" class="image">
         </div>
+        <div class=" col-lg-8">
+          <div class="para">
+            <h1 class="para__title"> L'agence <br> digitale offshore</h1>
+            <p class="para__desc">Nous developpons pour vous le concept <br> de <b>"boutique digitale"</b> en vus
+              proposant une<br> offre
+              sur measure </p>
+            <a href="#" class="btn btn-primary">more info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Nav bar ends here-->
+  <!--Main section starts here-->
+  <!--Services section-->
+  <main>
+    <div class="services">
+      <p>OUR SERVICES</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class=" col-lg-4">
+          <div class="os">
+            <span class="os__pic fa-stack fa-3x">
+              <i class="fa fa-apple fa-stack-1x"></i>
+            </span>
+            <div class="os__title"> IOS</div>
+            <div class="os__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est
+                volutpat
+                eleifend. </p>
+            </div >
+            <a href="#" class="btn btn-secondary"> more info</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="os">
+          <span class="os__pic fa-stack fa-3x">
+            <i class="fa fa-android fa-stack-1x"></i>
+          </span>
+          <div class="os__title">ANDROID</div>
+          <div class="os__desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat
+              eleifend. </p>
+          </div>
+          <a href="#" class="btn btn-secondary"> more info</a>
+        </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="os">
+          <span class="os__pic fa-stack fa-3x">
+            <i class="fa fa-windows fa-stack-1x"></i>
+          </span>
+          <div class="os__title">WINDOWS</div>
+          <div class="os__desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae  est volutpat
+              eleifend. </p>
+          </div>
+          <a href="#" class="btn btn-secondary"> more info</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Main section ends-->
+  <!-- Contact section -->
+  <div class="contact">
+    <h3 class="contact__title"> CONTACTEZ-NOUS</h3>
+    <p class="contact__desc"><i>Lorem ipsum dolor sit amet, ea has primis vidisse menandri,
+      no nec eros consetetur. Habeo menandri deserunt pri ut.
+      Qui ad sumo denique constituto, error abhorreant dissentias vim at.
+      Et his dico  eligendi, no legere expetenda sit.</i> </p>
+    <!-- 
+      <div class="container">
+        <form action=" ">
+          <div class="row">
+            <div class="col-25">
+              <label for="Objet">Objet</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Objet" name="Objet">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Nom">Nom</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Nom" name="Nom">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="E-mail">E-mail</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="E-mail" name="E-mail">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="Message" name="Message" style="height:150px"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-btn">Envoyez</button>
+        </form> -->
 
-    </header>
-    <!--Nav bar ends here-->
-
-    <!--Main section starts here-->
-    <!--Services section-->
-    <main>
-       
-        <h1 class="dim">OUR SERVICES</h1>
         <div class="container">
-            <div class="row">   
-                <div class=" col-lg-4" style="text-align: center;">
-                    <span class="pic fa-stack fa-3x">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-apple fa-stack-1x"></i>
-                      </span>
-                      <div class="log"> IOS</div>
-                   <div class="icon">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend. </p>
-                   </div>
-                    <a href="#" class="btn1"> more info</a>
-                </div>
-
-                <div class="col-lg-4" style="text-align: center;">
-                    <span class="pic fa-stack fa-3x">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-android fa-stack-1x" ></i>
-                      </span>
-                      <div class="log">ANDROID</div>
-                   <div class="icon">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend. </p>
-                   </div>
-                    <a href="#" class="btn1"> more info</a>
-                </div>
-
-                <div class="col-lg-4" style="text-align: center;">
-                    <span class="pic fa-stack fa-3x">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-windows fa-stack-1x"></i>
-                      </span>
-                      <div class="log">WINDOWS</div>
-                   <div class="icon">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat eleifend. </p>
-                   </div>
-                    <a href="#" class="btn1"> more info</a>
-                </div>
-    </main>
-    <!--Main section ends-->
-    
-
-    <!-- Footer section -->
-    <footer>
-        <h3 class="lab"> CONTACTEZ-NOUS</h3>
-
-         <p class="info">Lorem ipsum dolor sit amet, ea has primis vidisse menandri,
-            no nec eros consetetur. Habeo menandri deserunt pri ut. 
-            Qui ad sumo denique constituto, error abhorreant dissentias vim at. 
-            Et his dico eligendi, no legere expetenda sit. </p>   
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+             <form>
+   
+              <div class="form-item">
+                <div class="form-item__label">
+                <label for="Objet" >Objet</label>
+              </div>
+                <input type="text" id="Objet" name="Objet" class="form-item__input">
+              </div>
+              <div class="form-item">
+                <label for="Nom"  class="form-item__label">Nom</label>
+                <input type="text" id="Nom" name="Nom" class="form-item__input">
+              </div>
+              <div class="form-item">
+                <label for="E-mail"  class="form-item__label">Email</label>
+                <input type="text" id="E-mail" name="E-mail" class="form-item__input">
+              </div>
+              <div class="form-item">
+                <label for="Message"  class="form-item__label" >Message</label>
+                <input type="text" id="Message" name="Message" class="form-item__inp">
+              </div>
+              <div>
+                <button type="submit" class="btn btn-success">Envoyez</button>
+              </div>
           
-        <form>
-          <div class="container">
-            <form action=" ">
-              <div class="row">
-                <div class="col-25">
-                  <label for="Objet">Objet</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="Objet" name="Objet" >
-                </div>
-              </div>
+             </form>
+            </div>
+           
+            <!-- <div class="col-lg-3">
+              <label for="Objet">Objet</label>
+            </div>
+            <div class="col-lg-6 offset-lg-3">
+              <input type="text" id="Objet" name="Objet">
+            </div>
+              <div class="col-lg-6 offset-lg-3">
+                <input type="text" id="Nom" name="Nom">
+            </div>
+            <div class="col-lg-6 offset-lg-3">
+              <input type="text" id="E-mail" name="E-mail">
+          </div>
+          <div class="col-lg-6 offset-lg-3">
+            <input type="text" id="Message" name="messsage">
 
-              <div class="row">
-                <div class="col-25">
-                  <label for="Nom">Nom</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="Nom" name="Nom" >
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-25">
-                  <label for="E-mail">E-mail</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="E-mail" name="E-mail" >
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-25">
-                  <label for="Message">Message</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="Message" name="Message"  style="height:150px"></textarea>
-                </div>
-              </div>
-             
-                <button type="submit" class="btn-btn">Envoyez</button>
-             
-         </form> 
-         </div> 
-    </footer>
-    <!--Footer section ends-->
-    <p class="dam"> Copyright @ 2015 Web agency</p>
-    <script src="js/jquery-3.5.1.js"></script>
+              </div> -->
+          </div>
+        
+         
+  </div>
+  </div>
+  <!--Contact section ends-->
+  <!--Footer section-->
+  <p class="dam"> Copyright @ 2015 Web agency</p>
+  <script src="js/jquery-3.5.1.js"></script>
   <script src="js/script.js"></script>
-
- 
-
+  <!--Footer section ends-->
 </body>
 
 </html>
