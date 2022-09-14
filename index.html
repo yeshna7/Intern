@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
-  <link rel="stylesheet" href="css/bootstrap-rtl.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/sitestyle.css">
   <title>Home Page</title>
@@ -22,12 +21,14 @@
       <nav>
         <img src="image/logo.png">
         <ul class="nav-menu">
-          <li><a href="#" style="color: #4cc0e0"> Esokia </a></li>
+          <li><a href="#" class="active"> Esokia </a></li>
           <li><a href="#"> Services </a> </li>
-          <li><a href="#">Reference </a> </li>
+          <li><a href="#">références </a> </li>
         </ul>
         <a href="#" class="toggle-button">
-          <i class="fa fa-bars"></i>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
         </a>
       </nav>
     </div>
@@ -69,46 +70,47 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est
                 volutpat
                 eleifend. </p>
-            </div >
+            </div>
             <a href="#" class="btn btn-secondary"> more info</a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="os">
-          <span class="os__pic fa-stack fa-3x">
-            <i class="fa fa-android fa-stack-1x"></i>
-          </span>
-          <div class="os__title">ANDROID</div>
-          <div class="os__desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat
-              eleifend. </p>
+            <span class="os__pic fa-stack fa-3x">
+              <i class="fa fa-android fa-stack-1x"></i>
+            </span>
+            <div class="os__title">ANDROID</div>
+            <div class="os__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat
+                eleifend. </p>
+            </div>
+            <a href="#" class="btn btn-secondary"> more info</a>
           </div>
-          <a href="#" class="btn btn-secondary"> more info</a>
-        </div>
         </div>
         <div class="col-lg-4">
           <div class="os">
-          <span class="os__pic fa-stack fa-3x">
-            <i class="fa fa-windows fa-stack-1x"></i>
-          </span>
-          <div class="os__title">WINDOWS</div>
-          <div class="os__desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae  est volutpat
-              eleifend. </p>
+            <span class="os__pic fa-stack fa-3x">
+              <i class="fa fa-windows fa-stack-1x"></i>
+            </span>
+            <div class="os__title">WINDOWS</div>
+            <div class="os__desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus augue vitae est volutpat
+                eleifend. </p>
+            </div>
+            <a href="#" class="btn btn-secondary"> more info</a>
           </div>
-          <a href="#" class="btn btn-secondary"> more info</a>
         </div>
       </div>
-    </div>
   </main>
   <!--Main section ends-->
   <!-- Contact section -->
   <div class="contact">
-    <h3 class="contact__title"> CONTACTEZ-NOUS</h3>
+    <div class="container">
+    <h2 class="contact__title"> CONTACTEZ-NOUS</h2>
     <p class="contact__desc"><i>Lorem ipsum dolor sit amet, ea has primis vidisse menandri,
-      no nec eros consetetur. Habeo menandri deserunt pri ut.
-      Qui ad sumo denique constituto, error abhorreant dissentias vim at.
-      Et his dico  eligendi, no legere expetenda sit.</i> </p>
+        no nec eros consetetur. Habeo menandri deserunt pri ut.
+        Qui ad sumo denique constituto, error abhorreant dissentias vim at.
+        Et his dico eligendi, no legere expetenda sit.</i> </p>
     <!-- 
       <div class="container">
         <form action=" ">
@@ -146,61 +148,43 @@
           </div>
           <button type="submit" class="btn-btn">Envoyez</button>
         </form> -->
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-             <form>
-   
-              <div class="form-item">
-                <div class="form-item__label">
-                <label for="Objet" >Objet</label>
-              </div>
-                <input type="text" id="Objet" name="Objet" class="form-item__input">
-              </div>
-              <div class="form-item">
-                <label for="Nom"  class="form-item__label">Nom</label>
-                <input type="text" id="Nom" name="Nom" class="form-item__input">
-              </div>
-              <div class="form-item">
-                <label for="E-mail"  class="form-item__label">Email</label>
-                <input type="text" id="E-mail" name="E-mail" class="form-item__input">
-              </div>
-              <div class="form-item">
-                <label for="Message"  class="form-item__label" >Message</label>
-                <input type="text" id="Message" name="Message" class="form-item__inp">
-              </div>
-              <div>
-                <button type="submit" class="btn btn-success">Envoyez</button>
-              </div>
-          
-             </form>
-            </div>
-           
-            <!-- <div class="col-lg-3">
-              <label for="Objet">Objet</label>
-            </div>
-            <div class="col-lg-6 offset-lg-3">
-              <input type="text" id="Objet" name="Objet">
-            </div>
+ 
+     
+          <form>
+            <div class="row">
               <div class="col-lg-6 offset-lg-3">
-                <input type="text" id="Nom" name="Nom">
+            <div class="form-item d-flex">
+              <div class="form-item__label">
+                <label for="Objet">Objet</label>
+              </div>
+              <input type="text" id="Objet" name="Objet" class="form-item__input">
             </div>
-            <div class="col-lg-6 offset-lg-3">
-              <input type="text" id="E-mail" name="E-mail">
-          </div>
-          <div class="col-lg-6 offset-lg-3">
-            <input type="text" id="Message" name="messsage">
-
-              </div> -->
-          </div>
-        
-         
-  </div>
+            <div class="form-item d-flex">
+              <label for="Nom" class="form-item__label">Nom</label>
+              <input type="text" id="Nom" name="Nom" class="form-item__input">
+            </div>
+            <div class="form-item d-flex">
+              <label for="E-mail" class="form-item__label">Email</label>
+              <input type="text" id="E-mail" name="E-mail" class="form-item__input">
+            </div>
+            <div class="form-item d-flex">
+              <label for="Message" class="form-item__label">Message</label>
+              <textarea id="Message" name="Message" class="form-item__inp"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-success">Envoyez</button>
+            </div>
+          </form>
+        </div>
+       
+      </div>
+    </div>
   </div>
   <!--Contact section ends-->
   <!--Footer section-->
-  <p class="dam"> Copyright @ 2015 Web agency</p>
+  <div class="dam">
+  <p class=> Copyright @ 2015 Web agency</p>
+</div>
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/script.js"></script>
   <!--Footer section ends-->
