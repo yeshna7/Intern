@@ -2,22 +2,28 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .banner {
     background-image: url("../image/banner.png");
+    background-size: cover;
 }
+
 header {
     background-color: #000000;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 4px;
 }
+
 .nav-menu li {
     list-style: none;
     color: black;
@@ -26,27 +32,34 @@ nav {
     padding-right: 19px;
     margin-right: 19px;
 }
-.nav-menu li  .active{
+
+.nav-menu li .active {
     color: #4cc0e0;
 }
+
 nav ul li a {
     text-transform: uppercase;
     font-size: 14px;
 }
+
 .nav-menu li:last-child {
     border-right: none;
 }
+
 .nav-menu li a {
     color: white;
     text-decoration: none;
 }
+
 .nav-menu li a:hover {
     color: blueviolet
 }
+
 .image {
     display: block;
     margin-top: 32px;
 }
+
 .toggle-button {
     position: absolute;
     top: .75rem;
@@ -57,35 +70,42 @@ nav ul li a {
     height: 21px;
     width: 30px;
 }
+
 .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
 }
+
 /****/
 .para {
     font-family: 'Open Sans', sans-serif;
     padding-left: 94px;
 }
+
 .para__title {
     color: white;
     font-size: 48px;
     margin-bottom: 0;
 }
+
 .para__desc {
     margin-bottom: 37px;
 }
+
 .btn {
     padding: 10px 50px;
     text-decoration: none;
 }
+
 .btn-primary {
     font-size: 18px;
     line-height: 18px;
     color: #fff;
     background-color: #000000;
 }
+
 .btn-secondary {
     padding: 10px 33px;
     font-size: 14px;
@@ -94,9 +114,14 @@ nav ul li a {
     background-color: #4cc0e0;
     margin-bottom: 30px;
 }
+
 /****/
 /******** main section******/
 .services {
+    padding: 30px ;
+}
+
+.services__title {
     margin: 0 0 55px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -104,9 +129,11 @@ nav ul li a {
     font-size: 48px;
     text-transform: uppercase;
 }
+
 .os {
     padding: 0 32px;
 }
+
 .os__pic {
     color: #4cc0e0;
     border: 11px solid #4cc0e0;
@@ -118,48 +145,61 @@ nav ul li a {
     align-items: center;
     font-size: 64px;
 }
+
 .os__title {
     color: #4cc0e0;
-    padding-top: 29px;
+    margin-top: 29px;
     font-size: 22px;
 }
+
 .os__desc {
     font-size: 14px;
     padding-bottom: 25px;
 }
+
 .col-lg-4 {
     text-align: center;
 }
+
 /*** Contact section ***/
 .contact {
     text-align: center;
     background-image: url("../image/footer.png");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 50px 0 30px 0;
 }
-.dam {
+
+.foot {
     text-align: center;
     font-size: 12px;
+    margin-top: 30px;
 }
+
 .contact__title {
     text-align: center;
     color: #4cc0e0;
     font-size: 30px;
-    padding-top: 55px;
 }
+
 .contact__desc {
     font-size: 16px;
     color: #fff;
+    margin: 37px;
 }
+
 .form-item__input {
     height: 43px;
     width: 523px;
     margin-bottom: 20px;
 }
+
 .form-item__inp {
     height: 140px;
     width: 523px;
+    margin-bottom: 25px;
 }
+
 .form-item__label {
     color: #fff;
     font-size: 14px;
@@ -169,15 +209,17 @@ nav ul li a {
     line-height: 43px;
     flex: 0 0 100px;
 }
+
 .btn-success {
-    padding: 10px 77px;
+    padding: 12px 70px;
     font-size: 14px;
     line-height: 14px;
-    margin: 15px 30px;
     background-color: #499200;
     border: none;
-    color: #fff;
+    color: #ffffff;
+    text-transform: uppercase;
 }
+
 /*Responsive */
 @media only screen and (max-width: 899px) {
     .toggle-button {
@@ -185,49 +227,58 @@ nav ul li a {
         margin-top: 8px;
         display: flex;
     }
+
     .nav-menu {
         display: none;
         width: 100%;
     }
+
     .showing {
         display: block;
     }
+
     .nav-menu li {
         display: block;
         text-align: center;
         border-right: none;
-     margin-bottom: 15px;
-      
+        margin-bottom: 15px;
     }
+
     .nav-menu ul {
         width: 100%;
         flex-direction: column;
     }
-    
+
     a {
         text-decoration: none;
     }
+
     nav {
         flex-direction: column;
         align-items: flex-start;
-        
     }
+
     .image {
         display: none;
     }
+
     .banner {
         height: 430px
     }
+
     .os__pic {
         margin-top: 30px;
     }
+
     .contact__desc {
         padding: 0;
     }
+
     .form-item__input {
         height: 43px;
         width: 400px;
     }
+
     .form-item__inp {
         height: 140px;
         width: 400px;
